@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Be happy! Today is the day you were brought into this world to be a
+    blessing and inspiration......"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/android-chrome-512x512.png"
+    />
+    <title>Happy Birthday || Tina</title>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card"
+        onclick="  confetti({
+        particleCount: 100,
+        startVelocity: 30,
+        spread: 360,
+        origin: { x: Math.random(), y: Math.random() - 0.2 },
+      })"
+      >
+        <div class="content">
+          <h2>26</h2>
+          <h3>Happy Birthday, Tina</h3>
+          <p>
+            Be happy! Today is the day you were brought into this world to be a
+            blessing and inspiration to the people around you! You are a
+            wonderful person! May you be given more birthdays to fulfill all of
+            your dreams! May you be gifted with life’s biggest joys and
+            never-ending bliss. After all, you yourself are a gift to earth, so
+            you deserve the best. Happy birthday
+          </p>
+          <button
+            onclick="  confetti({
+            particleCount: 100,
+            startVelocity: 30,
+            spread: 360,
+          
+          })"
+          >
+            Happy Birthday
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./vanilla-tilt.js"></script>
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        glare: 1,
+      });
+    </script>
+
+    <script src="./confetti.browser.min.js"></script>
+  </body>
+</html>
